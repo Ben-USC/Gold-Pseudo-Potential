@@ -1,0 +1,26 @@
+In this version, you can use only Intel (and Fujitsu for debug) Fortran compiler.
+You can see which compilers are available by excuting,
+$ make help
+To set up compiler(e.g. ifort),
+$ make ifort
+
+*** complie
+$ make atm
+*** excute
+$ ./atm
+
+This repository is for constructing Gold (Au) psedo-potential
+
+xion_0_test folder is to test xion = 0 case
+
+########### 5D folders:
+5D_run folder: change ref, rus for 5d orbitals, and run
+5D_figures: wavefunctions and logarithmic derivatives for 5D orbitals, the title of each figure indicates the ref and rus used for this plot
+
+############ (6S folders are under construction)
+6S_run folder: change ref, rus for 6s orbitals, and run
+6S_figures: wavefunctions and logarithmic derivatives for 6S orbitals, the title of each figure indicates the ref and rus used for this plot
+
+############ (6P folders are under construction)
+6P_run folder: change ref, rus for 6p orbitals, and run
+6P_figures: wavefunctions and logarithmic derivatives for 6P orbitals, the title of each figure indicates the ref and rus used for this plot

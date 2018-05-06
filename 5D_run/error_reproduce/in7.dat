@@ -1,0 +1,83 @@
+
+    This input file is an example of construction of the PAW potential for W.
+
+*pseudo-potentials       :
+(atomic number)          :
+   79.d0                 : (zatm)  atomic number
+    0.d0                 : (xion)  valence ion
+                         :
+(radial mesh)            :
+    2001                 : (mesh1)  total No. of mesh
+    100.d0               : (xh)     width of logarithmic mesh
+    100.d0               : (rmax1)  maximum of radial mesh
+                         :
+(starting charge density):
+   .true.               : (lsg)  .true.  = read charge density from 'out_ATOM'
+                         :        .false. = estimate initial charge density
+                         :
+(latter correction)      :
+   .false.               : (latt)  .true. = on / .false. = off
+                         :
+(charge mixing)          :
+     0.3d0               : (phi)  mixing ratio
+                         :
+(accuracy)               :
+     5.0E-09             : (edel)  accuracy of eigenvalues
+     1.0E-06             : (vdel)  accuracy of potential
+                         :
+(print AE calculation)   :
+   .true.                : (lprn)
+   .true.                : (lplot)
+                         :
+(closed shell)           :
+[Xe]                     : (clshl)   [He], [Ne], [Ar], [Kr], [Xe], [Rn]
+                         : (nclshl) =  1,    3,    5,    8,   11,   15
+                         :
+(configuration)          :
+     4                   : No. of orbitals - No. of closed orbitals
+   430  14.d0            : (nljc, wnlj) orbital & No. of electrons  4f14
+   521  10.d0            : (nljc, wnlj) orbital & No. of electrons  5d10
+   601   1.d0            : (nljc, wnlj) orbital & No. of electrons  6s1
+   611   0.d0            : (nljc, wnlj) orbital & No. of electrons  6p0
+                         :
+  Note:
+       nljc = electron orbitals
+         (  nljc = 100*n + 10*l + k  ( k : arbitrary )  )
+       wnlj = number of electrons of each orbitals
+    where, n and l are quantum numbers.
+       k = 0  ......  frozen core
+       k = 1  ......  valence core
+                         :
+(pseudo-potential)       :
+    3                    : (methodpp) = 2:USPP, 3:PAW
+                         :
+(valence)                :
+    3                    : (nval)  No. of valence  (No. of k = 1)
+    2                    : (iref)  No. of reference  ......  5d orbital
+   -0.15d0  3.0d0   3.0d0 : (ref, rus, rnc)
+    2                    : (iref)  No. of reference  ......  6s orbital
+   -0.1d0  2.6d0   2.6d0 : (ref, rus, rnc)
+    2                    : (iref)  No. of reference  ......  6p orbital
+   -0.7d0  2.7d0   2.7d0 : (ref, rus, rnc)
+       ref = reference energy
+       rus = cutoff radius for USPP (or PAW)
+       rnc = cutoff radius for NCPP
+                         :
+  Note: if iref = 1, the AE eigenenergy is used as a reference energy.
+    1                    : (iref)  No. of reference
+           2.7d0   2.7d0 : (rus, rnc)
+                         :
+(local potential)        :
+   -0.1d0                : (V0)     local potential at r=0
+    1.8d0                : (rloc)   cutoff radius for local potential
+                         :
+(transferability)        :
+    5.d0                 : (rtra)   estimate logarithmic derivative at r = rtra
+                         :
+(G-function)             :
+    1.0d0                : (fcomp)  only for PAW method (methodpp = 3)
+                         :      rcomp = max_{reference} {rus,rnc}/fcomp
+                         :   rcomp is cutoff radius for G-function
+*(end)                   :
+
+
