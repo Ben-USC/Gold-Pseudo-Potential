@@ -54,11 +54,11 @@
 (valence)                :
     3                    : (nval)  No. of valence  (No. of k = 1)
     2                    : (iref)  No. of reference  ......  5d orbital
-   -0.3d0  2.7d0   2.7d0 : (ref, rus, rnc)
+   -5.1d0  5.5d0   5.5d0 : (ref, rus, rnc)
     2                    : (iref)  No. of reference  ......  6s orbital
-   -0.2d0  2.6d0   2.6d0 : (ref, rus, rnc)
+   -5.2d0  5.6d0   5.6d0 : (ref, rus, rnc)
     2                    : (iref)  No. of reference  ......  6p orbital
-   0.05d0  2.9d0   2.9d0 : (ref, rus, rnc)
+   -5.3d0  5.7d0   5.7d0 : (ref, rus, rnc)
        ref = reference energy
        rus = cutoff radius for USPP (or PAW)
        rnc = cutoff radius for NCPP

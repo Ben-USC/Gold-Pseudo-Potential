@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-ref=-5.3
-rc=5.7
+ref=0.05
+rc=2.9
 
 fig,axes=plt.subplots(2,2)
 fig.set_size_inches(8, 6)
