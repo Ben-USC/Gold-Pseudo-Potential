@@ -111,5 +111,7 @@ axes[1,1].set_title("5d: Fourier Components")
 fig.suptitle(f'5d orbital, ref = {ref}, rc = {rc}', fontsize=12)
 plt.tight_layout()
 plt.subplots_adjust(top=0.90)
-save="./5d_ref="+str(ref)+"_rc="+str(rc)+".eps"
-fig.savefig(save, format='eps')
+##save="./5d_ref="+str(ref)+"_rc="+str(rc)+".eps"
+##fig.savefig(save, format='eps')
+save="./5d_ref="+str(ref)+"_rc="+str(rc)+".png"
+fig.savefig(save, dpi=300)
