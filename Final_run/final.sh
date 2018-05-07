@@ -45,6 +45,8 @@ mv S_* P_* D_* ./output_files
 mv ele.dat ./output_files
 mv vloc.dat ./output_files
 
+cp *.png ../
+
 end=`date +%s`
 runtime=$((end-start))
 echo "------------- Run time: $runtime s ------------"
