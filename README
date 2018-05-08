@@ -13,14 +13,14 @@ This repository is for constructing Gold (Au) psedo-potential
 
 ############ 5D folders: for 5d orbital
 5D_run folder: change ref, rus for 5d orbitals, and run
-5D_figures: wavefunctions and logarithmic derivatives for 5D orbitals, the title of each figure indicates the ref and rus used for this plot
+5D_figures: wavefunctions, logarithmic derivatives, delE and Qbar for 5D orbitals, the title of each figure indicates the ref and rus used for this plot
 
 ############ 6S folders: for 6s orbital
 6S_run folder: change ref, rus for 6s orbitals, and run
-6S_figures: wavefunctions and logarithmic derivatives for 6S orbitals, the title of each figure indicates the ref and rus used for this plot
+6S_figures: wavefunctions, logarithmic derivatives, delE and Qbar for 6S orbitals, the title of each figure indicates the ref and rus used for this plot
 
 ############ 6P folders: for 6p orbital
 6P_run folder: change ref, rus for 6p orbitals, and run
-6P_figures: wavefunctions and logarithmic derivatives for 6P orbitals, the title of each figure indicates the ref and rus used for this plot
+6P_figures: wavefunctions, logarithmic derivatives, delE and Qbar for 6P orbitals, the title of each figure indicates the ref and rus used for this plot
 
 Acknowledgement: Hiroyuki and Shimamura sensei provided lots of valueable help and suggestions.
